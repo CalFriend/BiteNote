@@ -25,22 +25,40 @@
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        h1 {
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            border-radius: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header h1 {
             font-size: 24px;
             color: #1a1a1a;
-            margin-bottom: 30px;
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: #999;
+            font-size: 14px;
         }
         h2 {
             font-size: 18px;
             color: #1a1a1a;
             margin: 30px 0 15px;
+            padding-left: 12px;
+            border-left: 4px solid #43A047;
         }
         p {
             margin-bottom: 15px;
             color: #555;
+            text-align: justify;
         }
         ul {
             margin: 15px 0;
@@ -51,11 +69,15 @@
             margin-bottom: 8px;
         }
         .highlight {
-            background: #fff9e6;
+            background: #f0f9f0;
             padding: 15px 20px;
-            border-left: 4px solid #ffc107;
+            border-left: 4px solid #43A047;
             margin: 20px 0;
-            border-radius: 4px;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight p {
+            margin: 0;
+            color: #333;
         }
         .footer {
             margin-top: 40px;
@@ -69,47 +91,56 @@
 </head>
 <body>
     <div class="container">
-        <h1>用户协议</h1>
+        <div class="header">
+            <img src="assets/AppLogo.png" alt="食光记">
+            <h1>食光记 BiteNote</h1>
+            <p>记录每一餐，健康每一天</p>
+        </div>
 
-        <p>更新日期：2026年5月18日</p>
+        <p><strong>更新日期：</strong>2026年5月19日</p>
 
         <div class="highlight">
-            <strong>重要提示：</strong>请您在开始使用食光记 BiteNote（以下简称"本应用"）之前，仔细阅读本用户协议。您的下载、安装、注册或使用本应用的行为，即视为您已同意本协议的全部条款。
+            <p><strong>重要提示：</strong>请您在开始使用食光记 BiteNote（以下简称"本应用"）之前，仔细阅读本用户协议。您的下载、安装、注册或使用本应用的行为，即视为您已同意本协议的全部条款。</p>
         </div>
 
         <h2>一、服务说明</h2>
         <p>食光记是一款 AI 驱动的营养追踪应用，主要提供以下服务：</p>
         <ul>
-            <li>食物拍照识别与营养成分分析</li>
+            <li>食物拍照识别与营养成分分析（AI 自动识别食物并计算 calories、蛋白质、脂肪、碳水化合物）</li>
             <li>个性化 AI 营养建议和饮食规划</li>
             <li>每日饮食记录与营养数据统计</li>
+            <li>周/月度营养报告与趋势分析</li>
             <li>社区分享功能（需开通会员）</li>
         </ul>
 
         <h2>二、账户注册与安全</h2>
-        <p>您需要使用手机号码注册账户。您承诺：</p>
+        <p>您需要使用<strong>手机号码</strong>注册账户（通过 Apple 短信验证码登录）。您承诺：</p>
         <ul>
             <li>提供真实、准确、完整的注册信息</li>
             <li>妥善保管账户信息，因您保管不善造成的损失由您自行承担</li>
             <li>不得借用、转让他人账户使用</li>
         </ul>
 
-        <h2>三、会员服务</h2>
+        <h2>三、会员服务与免费额度</h2>
         <p>本应用提供免费试用和付费会员服务：</p>
         <ul>
-            <li><strong>免费用户：</strong>每周可享受 3 次 AI 营养分析对话</li>
-            <li><strong>会员权益：</strong>无限 AI 分析、高级数据统计、云端同步、长期历史追踪等</li>
-            <li>会员订阅为自动续费订阅，取消订阅需在到期前至少 24 小时操作</li>
+            <li><strong>免费用户：</strong>每周可享受 <strong>3 次</strong> AI 营养分析对话额度（每周一零点重置）；可使用拍照识别食物功能，但营养数据将模糊显示</li>
+            <li><strong>Pro 会员：</strong>无限 AI 营养分析、高级数据统计、云端同步、长期历史追踪、智能提醒等全部功能</li>
         </ul>
 
         <h2>四、订阅与退款</h2>
-        <p>订阅价格以 App Store 显示为准。订阅费用将在确认购买时从您的 Apple ID 账户扣费。购买前请确认订阅内容，付费成功后不支持基于功能不满意为由的退款申请。如有技术问题请联系客服处理。</p>
+        <p>会员订阅通过 Apple App Store 完成，订阅价格以 App Store 显示为准。订阅费用将在确认购买时从您的 Apple ID 账户扣费。</p>
+        <ul>
+            <li>会员订阅为<strong>自动续费订阅</strong>，取消订阅需在到期前至少 24 小时操作</li>
+            <li>购买前请确认订阅内容，付费成功后<strong>不支持基于功能不满意为由的退款申请</strong></li>
+            <li>如有关于订阅的技术问题，请通过应用内反馈功能与我们联系</li>
+        </ul>
 
         <h2>五、用户内容</h2>
-        <p>您在本应用中发布的所有内容（包括但不限于饮食记录、社区分享）您自行承担责任。您承诺不会发布违法、违规、侵权或令人反感的内容。我们有权在不通知的情况下删除违规内容。</p>
+        <p>您在本应用中发布的所有内容（包括但不限于饮食记录、社区分享）由您自行承担责任。您承诺不会发布违法、违规、侵权或令人反感的内容。我们有权在不通知的情况下删除违规内容。</p>
 
         <h2>六、AI 分析免责声明</h2>
-        <p>本应用中的 AI 营养分析和建议仅供参考，不构成医疗诊断或治疗建议。如有特殊健康状况或疾病，请咨询专业医生或营养师。本应用不代替专业的医疗建议。</p>
+        <p>本应用中的 AI 营养分析和建议<strong>仅供参考</strong>，不构成医疗诊断或治疗建议。如有特殊健康状况、疾病或饮食限制，请在专业医生或营养师指导下使用本应用。<strong>本应用不代替专业的医疗建议。</strong></p>
 
         <h2>七、服务变更与终止</h2>
         <p>我们保留随时修改或中断服务内容的权利，并会提前通知用户。因服务变更或不可抗力导致的损失，我们不承担责任，但会尽合理努力保护用户数据。</p>
@@ -123,7 +154,7 @@
             <li>使用本应用从事任何违法活动</li>
             <li>试图破解、篡改或干扰应用正常运行</li>
             <li>进行任何可能危害其他用户的行为</li>
-            <li>滥用会员权益或进行套利行为</li>
+            <li>滥用会员权益或进行套利、倒卖账户等行为</li>
         </ul>
 
         <h2>十、免责声明</h2>
@@ -139,8 +170,7 @@
         <p>如您对本协议有任何疑问，请通过应用内反馈功能与我们联系。</p>
 
         <div class="footer">
-            <p>食光记 BiteNote · 记录每一餐，健康每一天</p>
-            <p>© 2026 食光记 版权所有</p>
+            <p>© 2026 食光记 BiteNote 版权所有</p>
         </div>
     </div>
 </body>
